@@ -60,11 +60,14 @@ footer{
     border-bottom: 3px solid var(--footer-border-color);
     height: 100px;
 }
+
 main{
     display: flex;
     justify-content: center;
-    padding-top: 100px;
+    color: var(--navlink-txt-color);
+    font-size: 40px;
 }
+
 .navbar{
     position: fixed;
     bottom: 0;
@@ -117,45 +120,4 @@ main{
 }
 .navlink:hover{
     color: var(--navlink-hover-txt-color);
-}
-
-.choose1{
-    padding-left: 38%;
-}
-.choose2{
-    padding-left: 20px;
-    padding-right: 38%;
-}
-
-.pl1{
-    width: 230px;
-    height: 300px;
-    cursor: pointer;
-    font-size: 100px;
-    font-weight: bolder;
-    border-radius: 20px;
-    border: none;
-    background-color: var(--main-color1);
-    transition: 0.3s;
-
-}
-.pl1:hover{
-    font-size: 95px;
-    background-color: #af4646;
-}
-
-.pl2{
-    width: 230px;
-    height: 300px;
-    cursor: pointer;
-    font-size: 100px;
-    font-weight: bolder;
-    border-radius: 20px;
-    border: none;
-    background-color: var(--main-color2);
-    transition: 0.3s;
-}
-.pl2:hover{
-    font-size: 95px;
-    background-color: #bfd375;
 }
