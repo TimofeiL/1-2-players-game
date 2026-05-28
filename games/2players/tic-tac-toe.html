@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="snakestyle.css">
+    <link rel="stylesheet" href="tttstyle.css">
     <link rel="icon" href="logo.png">
     <script type="text/javascript" src="C:/Users/Timofei/Documents/1-2 player games/styles-n-js/theme.js" defer></script>
-    <script type="text/javascript" src="snake.js" defer></script>
     <title>1 Player Games</title>
 </head>
 <body>
@@ -20,28 +19,28 @@
         </button>
     </footer>
 	<main>
-    <div class="container">
-	<div class="score">		
-		score: <span class="score_val">0</span>
-	</div>
-	<div class="canvas-wrapper">
-		<canvas width="400" height="400"></canvas>
-	</div>
-	<div class="controls">
-		<button class="btn-start">Start</button>
-		<button class="btn-pause">Pause</button>
-		<div class="range range-difficulty">
-			<label for="difficulty">Speed</label>
-			<div class="range_inputWrapper">
-				<span class="range_inputValue"></span>
-				<div class="range_inputSlider"></div>
-				<input type="range" name="difficulty"
-				   value="8" min="1" max="10" step="1" >
-			</div>
-		</div>
-	</div>
-</div>
-</main>
+        <div class="wrapper">
+            <div class="container">
+                <button class="button-option"></button>
+                <button class="button-option"></button>
+                <button class="button-option"></button>
+                <button class="button-option"></button>
+                <button class="button-option"></button>
+                <button class="button-option"></button>
+                <button class="button-option"></button>
+                <button class="button-option"></button>
+                <button class="button-option"></button>
+            </div>
+            <button id="restart">Restart</button>
+        </div>
+        <div class="popup hide">
+            <p id="message">Sample Message</p>
+            <button id="new-game">New Game</button>
+        </div>
+   
+        <!-- Script -->
+        <script src="tic-tac-toe-js.js"></script>
+    </main>
     <div class="navbar">
         <div class="navBL"><a class="navbarLink" href="https://github.com/TimofeiL/1-2-players-game">GitHub</a></div>
         <div class="navBP"><p class="navbarP">Coded by TimofeiL for school project</p></div>

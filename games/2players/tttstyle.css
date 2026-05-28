@@ -1,7 +1,5 @@
 :root{
     --base-color: #d9d9d9;
-    --main-color1: #de5757;
-    --main-color2: #c3d975;
     --navbar-color: rgb(29, 29, 29);
     --navlink-txt-color: rgb(85, 85, 85);
     --navlink-hover-txt-color: rgb(51, 51, 51);
@@ -12,8 +10,6 @@
 }
 .darkmode{
     --base-color: rgb(49, 49, 49);
-    --main-color1: #de5757;
-    --main-color2: #c3d975;
     --navbar-color: rgb(29, 29, 29);
     --navlink-txt-color: #d9d9d9;
     --navlink-hover-txt-color: white;
@@ -64,11 +60,9 @@ footer{
     border-bottom: 3px solid var(--footer-border-color);
     height: 100px;
 }
-main {
+main{
     display: flex;
-    align-items: center;
-    justify-content: center;  
-    padding-top: 100px;
+    justify-content: center;
 }
 .navbar{
     position: fixed;
@@ -124,21 +118,78 @@ main {
     color: var(--navlink-hover-txt-color);
 }
 
-.game {
-    width: 300px;
-    height: 300px;
-    border-radius: 20px;
-    border: none;
-    background-color: var(--button-color);
-    color: var(--base-color);
-    font-size: 50px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
+.wrapper {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 45%;
+  left: 50%;
+}
+.container {
+  width: 50vmin;
+  height: 50vmin;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vmin;
+}
+.button-option {
+  background: var(--button-color);
+  height: 15vmin;
+  width: 15vmin;
+  border: none;
+  border-radius: 8px;
+  font-size: 12vmin;
+  color: var(--base-color);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+#restart {
+  font-size: 1.3em;
+  padding: 1em;
+  border-radius: 8px;
+  background-color: var(--button-color);
+  color: var(--base-color);
+  font-weight: bold;
+  border: none;
+  position: relative;
+  margin: 1.5em auto 0 auto;
+  display: block;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.game:hover {
-    width: 290px;
-    height: 290px;
+#restart:hover {
     background-color: var(--button-hover-color);
+}
+.popup {
+  background: var(--base-color);
+  height: 65%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  z-index: 2;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1em;
+  font-size: 12vmin;
+}
+#new-game {
+  font-size: 0.4em;
+  padding: 0.5em 1em;
+  background-color: var(--button-color);
+  color: var(--base-color);
+  border-radius: 0.2em;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#new-game:hover {
+    background-color: var(--button-hover-color);
+}
+#message {
+  color: var(--navlink-txt-color);
+  text-align: center;
+  font-size: 0.7em;
+}
+.popup.hide {
+  display: none;
 }
